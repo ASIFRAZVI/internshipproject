@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<link rel = "stylesheet" href ="signup.css">
+</head>
+<body>
+<div class="container">
+<h2>Signup</h2>
+<form action="/adduser" method="post">
+  <div class="input-group">
+    <input type="text"  name="name" placeholder="Enter your name" required>
+  </div>
+
+  <div class="input-group">    
+    <input type="email"  name="email"placeholder="Enter your email"  required>
+  </div>
+
+  <div class="input-group">   
+    <input type="number" name="phnumber" placeholder="Enter your phone number" required>
+  </div>
+
+  <div class="input-group">    
+    <input type="password" name="password"placeholder="Enter your password"  required>
+  </div>
+
+  <div class="button">
+    <button type="submit">Create User</button>
+  </div>
+</form>
+</div>
+
+<div class="expense-list">
+  <h3>Users List:</h3>
+  <ul id="userList"></ul>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
